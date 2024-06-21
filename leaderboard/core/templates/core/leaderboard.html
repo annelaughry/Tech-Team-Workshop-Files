@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="leaderboard.css">
+    <title>Leaderboard</title>
+</head>
+<body>
+    <canvas id="confetti"></canvas>
+    <div class="leaderboard">
+        <img src="sun.png" id="icon">
+        <h1>LEADERBOARD</h1>
+        <div class="top-3">
+            <div id="noroc" class="place second-place">
+                <p class="p1">2</p>
+                <div class="info">
+                    <img src="Noroc.jpg" class="team-logo" alt="s">
+                    <div>
+                        <div>Noroc Science</div>
+                        <div>20</div>
+                    </div>
+                </div>
+            </div>
+            <div id="supernovas" class="place first-place">
+                <p class="p1">1</p>
+                <div class="info1">
+                    <img src="SUPERNOVAS_new.jpg" class="team-logo1" alt="s">
+                    <div>
+                        <div>Supernovas</div>
+                        <div>1000</div>
+                    </div>
+                </div>
+            </div>
+            <div id="labrats" class="place third-place">
+                <p class="p1">3</p>
+                <div class="info">
+                    <img src="Lab_Rats.png" class="team-logo" alt="s">
+                    <div>
+                        <div>Lab Rats</div>
+                        <div>18</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="list-places">
+            <div id="capybara" class="list-item">
+                <p>4</p>
+                <div class="info">
+                    <img src="Capybara.png" class="team-logo" alt="s">
+                    <div class="point">Capybara - 15</div>
+                </div>
+            </div>
+            <div id="parkour" class="list-item">
+                <p>5</p>
+                <div class="info">
+                    <img src="Parkour Science.png" class="team-logo" alt="s">
+                    <div class="point">Parkour Science - 13</div>
+                </div>
+            </div>
+            <div id="stealth" class="list-item">
+                <p>6</p>
+                <div class="info">
+                    <img src="STEALTH.png" class="team-logo" alt="s">
+                    <div class="point">Stealth - 11</div>
+                </div>
+            </div>
+            <div id="rocket" class="list-item">
+                <p>7</p>
+                <div class="info">
+                    <img src="ROCKET RIDERS-2.png" class="team-logo" alt="s">
+                    <div class="point">Rocket Riders - 10</div>
+                </div>
+            </div>
+            <div id="fuerza" class="list-item">
+                <p>8</p>
+                <div class="info">
+                    <img src="Fuerza.png" class="team-logo" alt="s">
+                    <div class="point">Fuerza - 8</div>
+                </div>
+            </div>
+            <div id="bunsen" class="list-item">
+                <p>9</p>
+                <div class="info">
+                    <img src="Bunsen Burners.png" class="team-logo" alt="s">
+                    <div class="point">Bunsen Burners - 5</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+<script src="leaderboard.js"></script>
+<script>
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+        document.body.classList.toggle("light-theme");
+        if(document.body.classList.contains("light-theme")){
+        icon.src = "moon.png";
+    }else {
+        icon.src = "sun.png";
+     }
+    }
+</script>
+</body>
+</html>
